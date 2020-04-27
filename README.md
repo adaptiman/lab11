@@ -1,8 +1,3 @@
----
-title: 'Lab 11: Create and deploy a multi-container app'
-description: Learn how to use build a multi-container app on Azure App Service that contains a WordPress app and a MySQL container, and configure the WordPress app.
-keywords: azure app service, web app, linux, docker, compose, multicontainer, multi-container, web app for containers, multiple containers, container, wordpress, azure db for mysql, production database with containers
----
 <a id="top"></a>
 # Lab 11: Create and deploy a multi-container app
 

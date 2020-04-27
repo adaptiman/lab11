@@ -9,7 +9,7 @@
 *.userosscache
 *.sln.docstates
 createWPinAzure.sh
-compose-wordpress-*
+compose-wordpress*
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

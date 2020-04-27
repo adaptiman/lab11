@@ -10,4 +10,4 @@ az webapp config container set --resource-group WPRG --name davidswp --multicont
 az webapp config appsettings set --resource-group WPRG --name davidswp --settings WEBSITES_ENABLE_APP_SERVICE_STORAGE=TRUE
 az webapp config container set --resource-group WPRG --name davidswp --multicontainer-config-type compose --multicontainer-config-file compose-wordpress-step3.yml
 az webapp config appsettings set --resource-group WPRG --name davidswp --settings WP_REDIS_HOST="redis"
-az webapp config container set --resource-group WPRG --name davidswp --multicontainer-config-type compose --multicontainer-config-file compose-wordpress-step4.yml
+az webapp config container set --resource-group WPRG --name davidswp --multicontainer-config-type compose --multicontainer-config-file compose-wordpress-step4.yml  

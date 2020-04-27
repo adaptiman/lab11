@@ -556,7 +556,7 @@ You see a log for each container and an additional log for the parent process. C
 
 To submit the lab, run:
 ```
-$ ~/lab11/lab_grader
+$ ~/lab11/grader.sh
 ```
 The program will look for evidence that you completed this lab. Additionally, it will check for a running Wordpress installation on a container. The program will display your grade. You can run the grader as many times as you like until you're happy with your score. The grader automatically reports your grade to the instructor.
 

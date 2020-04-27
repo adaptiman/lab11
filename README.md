@@ -4,9 +4,9 @@
 This lab was originally written by [Mangesh Sangapu](https://github.com/msangapu) at Microsoft and adapted for TCMG-303 by [David Sweeney](https://adaptiman.com).
 
 
-[Web App for Containers](app-service-linux-intro.md) provides a flexible way to use Docker images. In this tutorial, you'll learn how to create a multi-container app using WordPress and MySQL. You can complete this lab from one of your running VM's, or via the Azure your shell, or you can run these commands locally with the [Azure CLI](/cli/azure/install-azure-cli) command-line tool (2.0.32 or later).
+[Web App for Containers](app-service-linux-intro.md) provides a flexible way to use Docker images. In this tutorial, you'll learn how to create a multi-container app using WordPress and MySQL. You should complete this lab from one of your running Ubuntu VM's. While you can complete the tutorial with any [Azure CLI](/cli/azure/install-azure-cli) command-line tool (2.0.32 or later), the grading program included in this repo *only* works on unix-based systems.
 
-In this lab, you learn how to:
+In this lab, you will learn how to:
 > * Convert a Docker Compose configuration to work with Web App for Containers
 > * Deploy a multi-container app to Azure
 > * Add application settings
@@ -19,15 +19,15 @@ In this lab, you learn how to:
 -  [Prerequisites](#pre)
 -  [Clone the repo](#clone)
 -  [Create a resource group](#rg)
--  [Create an Azure App Service plan](#serviceplan)
+-  [Create an Azure App Service Plan](#serviceplan)
 -  [Create a Docker Compose app](#dockerapp)
 -  [Connect to production database](#proddb)
 -  [Add persistent storage](#persist)
 -  [Add Redis container](#redis)
--  [Find Docker Container logs](#logs)
+-  [Find Docker container logs](#logs)
 -  [Submitting the Lab](#submitlab)
--  [Clean up deployment](#cleanup)
--  [Next steps](#next)
+-  [Clean up the deployment](#cleanup)
+-  [Summary](#summary)
 
 <a href="#table-of-contents" class="top" id="preface">Top</a>
 <a id="pre"></a>
@@ -39,7 +39,7 @@ To complete this lab, you need experience with [Docker Compose](https://docs.doc
 <a id="clone"></a>
 ## Clone the repo
 
-Run the following command to clone the sample app repository to your tutorial directory. Then change to the `lab11` directory.
+Run the following commands to clone the lab repository then change to the `lab11` directory.
 
 ```bash
 git clone https://github.com/adaptiman/lab11
@@ -556,7 +556,8 @@ You see a log for each container and an additional log for the parent process. C
 
 To submit the lab, run:
 ```
-$ ~/lab11/lab_grader
+$ history -a
+$ ~/lab11/grader.sh
 ```
 The program will look for evidence that you completed this lab. Additionally, it will check for a running Wordpress installation on a container. The program will display your grade. You can run the grader as many times as you like until you're happy with your score. The grader automatically reports your grade to the instructor.
 
@@ -567,10 +568,11 @@ After you have submitted the lab, the following command can be used to remove th
 ```
 az group delete --name myResourceGroup
 ```
+The lab grader only runs on unix. It will not work on Windows or MacOS.
 
 <a href="#table-of-contents" class="top" id="preface">Top</a>
-<a id="next"></a>
-## Next steps
+<a id="summary"></a>
+## Summary
 
 In this lab, you learned how to:
 > * Convert a Docker Compose configuration to work with Web App for Containers

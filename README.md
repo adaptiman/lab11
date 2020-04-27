@@ -1,9 +1,12 @@
 <a id="top"></a>
 # Lab 11: Create and deploy a multi-container app
 
+This lab was originally written by [Mangesh Sangapu](https://github.com/msangapu) at Microsoft and adapted for TCMG-303 by [David Sweeney](https://adaptiman.com).
+
+
 [Web App for Containers](app-service-linux-intro.md) provides a flexible way to use Docker images. In this tutorial, you'll learn how to create a multi-container app using WordPress and MySQL. You can complete this lab from one of your running VM's, or via the Azure your shell, or you can run these commands locally with the [Azure CLI](/cli/azure/install-azure-cli) command-line tool (2.0.32 or later).
 
-In this tutorial, you learn how to:
+In this lab, you learn how to:
 > * Convert a Docker Compose configuration to work with Web App for Containers
 > * Deploy a multi-container app to Azure
 > * Add application settings
@@ -550,6 +553,12 @@ You see a log for each container and an additional log for the parent process. C
 <a href="#table-of-contents" class="top" id="preface">Top</a>
 <a id="submitlab"></a>
 ## Submitting the lab
+
+To submit the lab, run:
+```
+$ ~/lab11/lab_grader
+```
+The program will look for evidence that you completed this lab. Additionally, it will check for a running Wordpress installation on a container. The program will display your grade. You can run the grader as many times as you like until you're happy with your score. The grader automatically reports your grade to the instructor.
 
 <a href="#table-of-contents" class="top" id="preface">Top</a>
 <a id="cleanup"></a>
